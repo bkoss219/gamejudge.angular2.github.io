@@ -1,0 +1,23 @@
+.consmain {
+    text-align: center;
+}
+
+.gnm {
+    color:lightblue;
+}
+
+.gmn {
+    color:lightcoral;
+}
+
+.gyr {
+    color:grey;
+}
+
+.gc {
+    color:darkgoldenrod;
+}
+
+*{
+    text-decoration:none;
+}

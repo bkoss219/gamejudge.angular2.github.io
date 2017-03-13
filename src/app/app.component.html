@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="consmain">
+  <h1>Consoles</h1>
+  <h2 *ngFor="let c of consoles">
+    <a class="gmn" [attr.href]="'mn/'+c.mn+'.html'">{{c.mn}}</a> - <a class="gnm" [attr.href]="'consoles/'+c.nm+'.html'">{{c.nm}}</a> - <a class="gyr" [attr.href]="'years/'+c.yr+'.html'">{{c.yr}}</a>
+  </h2>
+  <h1>Games</h1>
+  <h2 *ngFor="let g of games">
+    <a class="gnm" [attr.href]="'games/'+g.nm+'.html'">{{g.nm}}</a> (<a class="gmn" [attr.href]="'mn/'+g.mn+'.html'">{{g.mn}}</a>, <a class="gyr" [attr.href]="'years/'+g.yr+'.html'">{{g.yr}}</a>) [<a class="gc" [attr.href]="'consoles/'+g.cs+'.html'">{{g.cs}}</a>]
+  </h2>
+</div>
